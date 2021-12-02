@@ -19,21 +19,23 @@ or
 ```bash
 make install
 ```
-4.Run the server with the command:
+3. Run the server with the command:
 
 ```
 make run
 ```
-5. The server will be available in ``http://localhost:8383``
+4. The server will be available in ``http://localhost:8383``
 
 ## Features
 - Accepts GET & HEAD requests
 - In the default path returns the `index.html`
+- If the entered route not exists, return `404`
+- If the request came with invalid method, return `405`
 
 ## Available status codes
 
 > `200 (OK)`
 
-> `400 (Bad Request)`
-
 > `404 (Not Found)`
+
+> `405 (Method Not Allowed)`
