@@ -8,17 +8,23 @@ This is a simple HTTP server written in C using sockets.
 
 > If you are in a linux distribution OS, this step is not needed
 
-2. In the project folder, run the command:
+2. In the project folder, run the command bellow, to install:
 
 ```bash
 make
 ```
-4.Run the server with :
+
+or
+
+```bash
+make install
+```
+4.Run the server with the command:
 
 ```
-./http-server
+make run
 ```
-5. The server will be available in ``http://localhost:8000``
+5. The server will be available in ``http://localhost:8383``
 
 ## Features
 - Accepts GET & HEAD requests
