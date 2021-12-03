@@ -59,7 +59,7 @@ int main(int argc, char **argv)
 
 	while (1)
 	{
-		if (listen(sock_fd, 10) < 0)
+		if (listen(sock_fd, 100) < 0)
 		{
 			perror("server: listen");
 			exit(1);
